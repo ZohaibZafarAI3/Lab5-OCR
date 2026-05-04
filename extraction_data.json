@@ -1,0 +1,25 @@
+{
+    "invoice_number": "INV-2024-001",
+    "dates": [
+      "March 15, 2024\nFrom:"
+    ],
+    "amounts": [
+      202.0,
+      4.0,
+      1.0,
+      15.0,
+      202.0,
+      4.0,
+      1250.5
+    ],
+    "persons": [
+      "John Smith"
+    ],
+    "organizations": [],
+    "locations": [],
+    "money": [
+      "1,250.50"
+    ],
+    "total_amount": 1250.5,
+    "invoice_date": "March 15, 2024\nFrom:"
+  }
