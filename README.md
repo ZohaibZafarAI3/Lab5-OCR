@@ -1,31 +1,60 @@
-Lab 5: Document Intelligence - OCR Basics
-Overview
-Extract text from images using Tesseract and EasyOCR with OpenCV preprocessing.
+# 📄 Document Intelligence System - Project 2
 
-Objectives
-Extract text from receipts using Tesseract
-Use EasyOCR as second engine
-Apply grayscale, blur, and thresholding
-Compare before/after preprocessing
-Build receipt parser with regex
-Technologies
-Python, Tesseract, EasyOCR, OpenCV, PyTesseract, Pandas, Matplotlib
+## 🎯 Project Overview
+A complete end-to-end document processing pipeline that extracts text from images, classifies document types, and extracts structured information using OCR, Machine Learning, and Natural Language Processing.
 
-Results Table
-Receipt Before After Gain
+---
 
-receipt1.jpg 245 389 +144 receipt2.jpg 312 456 +144 receipt3.jpg 278 412 +134 receipt4.jpg 298 435 +137 receipt5.jpg 334 478 +144
+## 📊 What I Built in 3 Weeks
 
-Key Findings
-Adaptive threshold works better than binary
-Preprocessing improved accuracy ~50%
-EasyOCR provides confidence scores
-Tesseract faster but less accurate on noisy images
-Project Files
-Lab5-OCR/ ├── lab5_ocr.py ├── requirements.txt ├── receipt_ocr_results.csv ├── receipts/ └── README.md
+### Week 6: Advanced OCR with CNN (99.24% Accuracy)
+- Built a Convolutional Neural Network from scratch
+- Trained on MNIST dataset (70,000 handwritten digits)
+- Achieved **99.24% test accuracy**
+- Learned how deep learning powers modern OCR systems
 
-Installation
-pip install pytesseract opencv-python pillow pandas easyocr matplotlib
+**Technologies:** TensorFlow, Keras, CNN, MaxPooling, Dropout
 
-Conclusion
-OCR accuracy improves significantly with preprocessing. Adaptive thresholding best for varied lighting conditions.
+### Week 7: Information Extraction with Regex & NER
+- Extracted dates in multiple formats (MM/DD/YYYY, Month DD, YYYY)
+- Extracted currency amounts with $ handling
+- Extracted invoice/order numbers using patterns
+- Used spaCy for Named Entity Recognition (People, Organizations, Locations)
+- Visualized entities with displaCy
+
+**Technologies:** Regular Expressions, spaCy, displaCy
+
+### Week 8: Document Classification & REST API
+- Trained document classifier (invoice/receipt/contract)
+- Used TF-IDF vectorization with 1000 features
+- Achieved **100% accuracy** on test set
+- Built production-ready REST API with FastAPI
+- Created interactive Swagger documentation
+
+**Technologies:** FastAPI, scikit-learn, Joblib, Uvicorn
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔍 OCR Pipeline | Extracts text from images using Tesseract |
+| 📝 Digit Recognition | CNN model with 99.24% accuracy |
+| 📅 Date Extraction | Supports multiple date formats |
+| 💰 Amount Extraction | Handles $1,250.50, 1250.50, $1250 |
+| 🏢 NER | Extracts People, Organizations, Locations |
+| 📄 Classification | Identifies invoices, receipts, contracts |
+| 🔌 REST API | FastAPI with 4 endpoints |
+| 📚 Documentation | Interactive Swagger UI |
+
+---
+
+## 🛠️ Technologies Used
+ Python 3.14 │
+├─────────────────────────────────────────────────────────┤
+│ 🔬 Machine Learning: scikit-learn, TensorFlow/Keras │
+│ 🖼️ Image Processing: OpenCV, PIL, Tesseract OCR │
+│ 📊 NLP: spaCy, Regular Expressions │
+│ 🌐 API: FastAPI, Uvicorn │
+│ 📦 Utilities: Joblib, NumPy, Matplotlib │

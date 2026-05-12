@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+scikit-learn
+joblib
+pytesseract
+pillow
+opencv-python
+spacy
